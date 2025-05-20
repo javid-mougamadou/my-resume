@@ -1,0 +1,11 @@
+services:
+  app:
+    image: hugomods/hugo
+    environment:
+      - TZ=Europe/Paris
+    volumes:
+      - ./:/src
+      - ./hugo_cache:/tmp/hugo_cache
+    ports:
+      - 1313:1313
+    command: "sleep infinity"

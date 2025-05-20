@@ -1,0 +1,104 @@
+baseURL: "https://javid-mougamadou.pro/"
+languageCode: "fr-fr"
+title: "Javid Mougamadou – Fullstack Developer Freelance | Django, Docker, Developer Experience"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+canonifyURLs: true
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  description: "Javid Mougamadou – Senior Fullstack Developer Freelance spécialisé en Django, Docker et Developer Experience. Expert Python, React et Kubernetes avec 9+ ans d'expérience."
+  keywords: [Javid Mougamadou, Developer Experience, Django, Docker, Fullstack Developer, Freelance, Python, React, Kubernetes, DevOps, SRE, Mentor]
+  author: ["Javid Mougamadou"]
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  canonicalURL: "https://javid-mougamadou.pro/"
+  ShowShareButtons: true
+  ShowReadingTime: false
+  ShowPostNavLinks: true
+
+  assets:
+    favicon: "favicon.ico"
+    favicon16x16: "favicon-16x16.png"
+    favicon32x32: "favicon-32x32.png"
+    apple_touch_icon: "apple-touch-icon.png"
+    og_image: "images/profile.png"
+
+  socialIcons:
+    - name: CV
+      url: "files/Javid_Resume_ENG_2025.pdf"
+    - name: Discord
+      url: "https://discord.gg/nRTQmNHp"
+    - name: Dev.to
+      url: "https://dev.to/javidjms"
+    - name: LinkedIn
+      url: "https://www.linkedin.com/in/mougamadoujavid/"
+    - name: GitHub
+      url: "https://github.com/javid-mougamadou"
+    - name: Malt
+      url: "https://www.malt.fr/profile/javidmougamadou1"
+    - name: Email
+      url: "mailto:javid.mougamadou2@gmail.com"
+
+  label:
+    icon: apple-touch-icon.png
+    iconHeight: 35
+    text: Javid Mougamadou
+
+  profileMode:
+    enabled: true
+    title: "Javid Mougamadou"
+    subtitle: "Senior Fullstack Developer – Django, Docker & Developer Experience"
+    subtitle2: "Python • Django • ReactJS • NextJS • Docker • Kubernetes • Ansible • Nginx"
+    imageUrl: "images/profile.png"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: "Javid Mougamadou Profile Photo"
+
+    buttons:
+    - name: Developer Experience
+      url: "/tags/developer-experience/"
+    - name: Freelance
+      url: "/tags/freelance/"
+    - name: Mentoring
+      url: "/tags/mentoring/"
+  
+  footer:
+    hideCopyright: true
+
+markup:
+  highlight:
+    noClasses: false
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
+
+pygmentsUseClasses: true
+
+menu:
+  main:
+    - identifier: apps
+      name: Apps
+      url: https://javid-space.cloud
+      weight: 10
+      params:
+        target: _blank
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+
+services:
+  googleAnalytics:
+    ID: "G-6GGQG0KJ1C"
