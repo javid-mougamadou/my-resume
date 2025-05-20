@@ -1,0 +1,54 @@
+baseURL: https://javid-mougamadou.github.io/my-resume/
+languageCode: fr-fr
+title: Javid Resume 
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  description: "Javid Mougamadou Website"
+  keywords: [Javid, Mougamadou, Resume, Website]
+  author: ["Javid Mougamadou"]
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  label:
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  profileMode:
+    enabled: true
+    title: Javid Mougamadou
+    subtitle: "Senior Fullstack Developer & DevOps/SRE"
+    subtitle2: "Python | Django | ReactJS | NextJS | Docker | Kubernetes | Ansible | Nginx"
+    imageUrl: "images/profile.png"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: "Photo de Javid"
+
+  socialIcons:
+    - name: cv
+      url : "files/Javid_Resume_ENG_2025.pdf"
+    - name: dev
+      url: "https://dev.to/javidjms"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/mougamadoujavid/"
+    - name: github
+      url: "https://github.com/javid-mougamadou"
+    - name: other
+      url: "https://www.malt.fr/profile/javidmougamadou1"
+    - name: email  
+      url: "mailto:javid.mougamadou2@gmail.com"
+
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
