@@ -1,4 +1,4 @@
-baseURL: https://example.org/
+baseURL: https://javid-mougamadou.github.io/my-resume/
 languageCode: fr-fr
 title: Javid Resume 
 theme: "PaperMod"
@@ -29,14 +29,14 @@ params:
     title: Javid Mougamadou
     subtitle: "Senior Fullstack Developer & DevOps/SRE"
     subtitle2: "Python | Django | ReactJS | NextJS | Docker | Kubernetes | Ansible | Nginx"
-    imageUrl: "/images/profile.png"
+    imageUrl: "images/profile.png"
     imageWidth: 120
     imageHeight: 120
     imageTitle: "Photo de Javid"
 
   socialIcons:
     - name: cv
-      url : "/files/Javid_Resume_ENG_2025.pdf"
+      url : "files/Javid_Resume_ENG_2025.pdf"
     - name: dev
       url: "https://dev.to/javidjms"
     - name: linkedin
