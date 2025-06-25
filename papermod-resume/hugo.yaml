@@ -80,3 +80,7 @@ markup:
     style: monokai
 
 pygmentsUseClasses: true
+
+services:
+  googleAnalytics:
+    ID: "GTM-5FS6K3PR"
