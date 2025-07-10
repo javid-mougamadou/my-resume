@@ -35,7 +35,9 @@ params:
 
   socialIcons:
     - name: CV
-      url : "files/Javid_Resume_ENG_2025.pdf"
+      url: "files/Javid_Resume_ENG_2025.pdf"
+    - name: Discord
+      url: "https://discord.gg/nRTQmNHp"
     - name: Dev.to
       url: "https://dev.to/javidjms"
     - name: LinkedIn
