@@ -66,11 +66,11 @@ params:
 
     buttons:
     - name: Developer Experience
-      url: "#"
+      url: "/tags/developer-experience/"
     - name: Freelance
-      url: "#"
+      url: "/tags/freelance/"
     - name: Mentoring
-      url: "#"
+      url: "/tags/mentoring/"
   
   footer:
     hideCopyright: true
