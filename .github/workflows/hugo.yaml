@@ -5,6 +5,8 @@ on:
     branches:
       - main
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
 
 permissions:
   contents: read
@@ -85,3 +87,14 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  daily-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Daily check
+        run: |
+          echo "🔍 Vérification quotidienne du site Hugo"
+          echo "Date: $(date)"
+          echo "Workflow déclenché par: ${{ github.event_name }}"
