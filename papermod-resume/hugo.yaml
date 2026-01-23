@@ -4,9 +4,16 @@ title: "Javid Mougamadou – Fullstack Developer Freelance | Django, Docker, Dev
 theme: "PaperMod"
 
 enableRobotsTXT: true
+enableGitInfo: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+
+# Configuration du sitemap
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 
 canonifyURLs: true
 minify:
@@ -15,8 +22,8 @@ minify:
 
 params:
   env: production
-  description: "Javid Mougamadou – Senior Fullstack Developer Freelance spécialisé en Django, Docker et Developer Experience. Expert Python, React et Kubernetes avec 9+ ans d'expérience."
-  keywords: [Javid Mougamadou, Developer Experience, Django, Docker, Fullstack Developer, Freelance, Python, React, Kubernetes, DevOps, SRE, Mentor]
+  description: "Javid Mougamadou – Senior Fullstack Developer Freelance spécialisé en Django, Docker et Developer Experience. Expert Python, React et Kubernetes avec 10+ ans d'expérience."
+  keywords: [Javid Mougamadou, Developer Experience, Django, Docker, Fullstack Developer, Freelance, Python, React, Kubernetes, DevOps, SRE, Mentor, FastAPI]
   author: ["Javid Mougamadou"]
   defaultTheme: auto
   disableThemeToggle: false

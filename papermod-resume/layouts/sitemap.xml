@@ -1,0 +1,22 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {{- range site.AllPages }}
+  {{- if and (ne .Layout "search") (ne .Layout "archives") (not .Params.sitemap_exclude) }}
+  {{- $lastmod := cond (ne .GitInfo nil) .GitInfo.AuthorDate .Lastmod }}
+  
+  {{- /* Calcul de la priorité par défaut selon le type */}}
+  {{- $defaultPriority := cond .IsHome 1.0 (cond (eq .Kind "page") 0.8 (cond (eq .Kind "section") 0.7 (cond (eq .Kind "term") 0.6 0.5))) }}
+  {{- $defaultChangefreq := cond .IsHome "weekly" (cond (eq .Kind "page") "monthly" (cond (eq .Kind "section") "weekly" (cond (eq .Kind "term") "weekly" "monthly"))) }}
+  
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    {{- if not $lastmod.IsZero }}
+    <lastmod>{{ $lastmod.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
+    {{- end }}
+    <changefreq>{{ default $defaultChangefreq .Params.sitemap.changefreq }}</changefreq>
+    <priority>{{ default $defaultPriority .Params.sitemap.priority }}</priority>
+  </url>
+  {{- end }}
+  {{- end }}
+</urlset>
