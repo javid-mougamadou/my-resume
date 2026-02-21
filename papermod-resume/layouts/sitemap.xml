@@ -4,7 +4,7 @@
   {{- range site.AllPages }}
   {{- if and (ne .Layout "search") (ne .Layout "archives") (not .Params.sitemap_exclude) }}
   {{- $lastmod := cond (ne .GitInfo nil) .GitInfo.AuthorDate .Lastmod }}
-  {{- if $lastmod.IsZero }}{{ $lastmod = now }}{{ end }}
+  {{- if $lastmod.IsZero }}{{ $lastmod = time "2026-02-21" }}{{ end }}
 
   {{- /* Calcul de la priorité par défaut selon le type */}}
   {{- $defaultPriority := cond .IsHome 1.0 (cond (eq .Kind "page") 0.8 (cond (eq .Kind "section") 0.7 (cond (eq .Kind "term") 0.6 0.5))) }}
