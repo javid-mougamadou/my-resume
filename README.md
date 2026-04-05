@@ -71,3 +71,9 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 Feel free to fork or adapt this resume template for your own portfolio.
+
+---
+
+## Contact
+
+**Contact :** **Javid Mougamadou** — [Site web](https://javid-mougamadou.pro/) · [GitHub](https://github.com/javid-mougamadou) · [LinkedIn](https://www.linkedin.com/in/mougamadoujavid/) · [Discord](https://discord.gg/8rK6CKGb) · [Email](mailto:javid.mougamadou2@gmail.com)
