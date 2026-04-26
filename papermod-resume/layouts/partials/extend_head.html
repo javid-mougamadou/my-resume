@@ -1,0 +1,33 @@
+<style>
+.profile-name-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+    .profile-name-row {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+}
+.chat-bubble {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.75rem;
+    background-color: #2563eb;
+    border-radius: 999px;
+    text-decoration: none;
+    flex-shrink: 0;
+    transition: background-color 0.2s;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.chat-bubble:hover {
+    background-color: #1d4ed8;
+}
+</style>
